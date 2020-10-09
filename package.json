@@ -1,6 +1,6 @@
 {
   "name": "express-portfolio",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node ./server.js"
@@ -15,5 +15,18 @@
     "http-errors": "~1.6.3",
     "jquery": "^3.5.1",
     "morgan": "~1.9.1"
-  }
+  },
+  "description": "Express Portfolio",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tasriq/ExpressPortfolio.git"
+  },
+  "author": "Soyed Tasriq Ahmed Rahat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tasriq/ExpressPortfolio/issues"
+  },
+  "homepage": "https://github.com/tasriq/ExpressPortfolio#readme"
 }
