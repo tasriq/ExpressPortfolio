@@ -53,17 +53,17 @@ router.get('/contact', indexController.displayContactPage);
 
 //GET login
 /* GET Route for displaying the Add page - CREATE Operation */
-router.get('/login', indexController.displayloginPage);
+router.get('/login', indexController.displayLoginPage);
 
 /* POST Route for processing the Add page - CREATE Operation */
-router.post('/login', indexController.processloginPage);
+router.post('/login', indexController.processLoginPage);
 
 
 /* GET Route for displaying the Add page - CREATE Operation */
-router.get('/register', indexController.displayResigterPage);
+router.get('/register', indexController.displayRegisterPage);
 
 /* POST Route for processing the Add page - CREATE Operation */
-router.post('/register', indexController.processRgisterPage);
+router.post('/register', indexController.processRegisterPage);
 
 /* GET to perform  Deletion - DELETE Operation */
 router.get('/logout', indexController.performLogout);

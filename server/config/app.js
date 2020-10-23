@@ -9,7 +9,7 @@ let logger = require('morgan');
 let session = require('express-session');
 let passport = require('passport');
 let passportLocal = require('passport-local');
-let lacalStrategy= passportLocal.Strategy;
+let localStrategy= passportLocal.Strategy;
 let flash = require('connect-flash')
 
 
@@ -64,8 +64,7 @@ let userModel = require('../models/user');
 let User = userModel.user;
 
 //strategy
-passport.use(User.createstrategy());
-
+//passport.use(User.createStrategy());
 
 //serialize
 //passport.serializeUser(User.serializeUser());
