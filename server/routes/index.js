@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+let indexController = require('../controllers/index');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -30,5 +31,23 @@ router.get('/services', function(req, res, next) {
 router.get('/contact', function(req, res, next) {
   res.render('contact', { title: 'Contact Me' });
 });
+
+//GET login
+/* GET Route for displaying the Add page - CREATE Operation */
+router.get('/login', indexController.displayloginPage);
+
+/* POST Route for processing the Add page - CREATE Operation */
+router.post('/login', indexController.processloginPage);
+
+
+/* GET Route for displaying the Add page - CREATE Operation */
+router.get('/register', indexController.displayResigterPage);
+
+/* POST Route for processing the Add page - CREATE Operation */
+router.post('/register', indexController.processRgisterPage);
+
+/* GET to perform  Deletion - DELETE Operation */
+router.get('/logout', indexController.performLogout);
+
 
 module.exports = router;
